@@ -2,7 +2,9 @@
 <div class="test">
     <h3>this is home component</h3>
     <h2>hello {{name}}</h2>
-    <input type="text" value={{name}}>
+    <input type="text" [(ngModel)] ="name" />
     <br>
-    <input type="text" [value]=name>
+    <input type="text" [value]=name/>
+
+<button (click)="resetName()">Reset ten</button>
 </div>
