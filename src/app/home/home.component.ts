@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit{
   public name = "linh";
   public 'age': number ;
   public traiCay = ["tao", "nho", "quyt"];
+  public traiCay2 = [{ten: 'tao', price: 20, sale: true}, {ten: 'dao', price: -25, sale :false}, {ten: 'quyt', price: 15, sale: true}];
   constructor(){}
 
   ngOnInit(): void {

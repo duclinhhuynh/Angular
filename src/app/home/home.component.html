@@ -4,3 +4,20 @@
     <li>{{i + 1}},{{trai}}</li>
    </div>
 </div>
+<br>
+<table class="table1">
+    <tr>
+      <th>thu tu</th>  
+      <th>Ten </th>
+      <th>gia</th>
+      <th>Ha gia</th>
+    </tr>
+    <tr *ngFor = "let trai of traiCay2 ; let i = index">
+      <td>{{i + 1}}</td>
+      <td>{{trai.ten}}</td>
+      <td class="right">
+        <span [ngClass]="{'so-am': trai.price < 0}">{{trai.price}}</span>
+      </td>
+      <td class="right" *ngIf="trai.sale">Dang ha gia</td>
+    </tr>
+  </table>
