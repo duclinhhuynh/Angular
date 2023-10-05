@@ -5,6 +5,12 @@
     <input type="text" [(ngModel)] ="name" />
     <br>
     <input type="text" [value]=name/>
+    <input type="text" [(ngModel)]="age">
+    <h3>Tuoi cua ban laf {{age}}</h3>
+    <h2 *ngIf="age <= 18; then tre ; else gia"></h2>
+    <h2 *ngIf="age > 18 "></h2>
+     <ng-template #tre>ban tre </ng-template>
+     <ng-template #gia>ban gia </ng-template>
 
 <button (click)="resetName()">Reset ten</button>
 </div>
