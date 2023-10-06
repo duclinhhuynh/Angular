@@ -3,9 +3,9 @@
    <div *ngFor="let trai of traiCay, let i = index">
     <li>{{i + 1}},{{trai}}</li>
    </div>
-</div>
+
 <br>
-<table class="table1">
+<!-- <table class="table1">
     <tr>
       <th>thu tu</th>  
       <th>Ten </th>
@@ -20,4 +20,18 @@
       </td>
       <td ><span class="right" *ngIf="trai.sale">{{ trai.sale | onSale | uppercase }}</span></td>
     </tr>
-  </table>
+  </table> -->
+   Tinh / thanh pho 
+   <select id = 'city' (change)="changeCity($event)">
+      <option *ngFor="let data of cities" value="{{data.city}}">
+          {{data.city}}
+      </option>
+   </select>
+   <br>
+   quan / huyen 
+  <select id = 'district'>
+    <option *ngFor="let district of districts" value="{{district}}">
+        {{district}}
+    </option>
+  </select>
+</div>
