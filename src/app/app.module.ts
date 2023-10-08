@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { OnSalePipe } from './on-sale.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HighLightDirective } from './Directives/high-light.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     AboutComponent,
     OnSalePipe,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HighLightDirective
   ],
   imports: [
     BrowserModule,
